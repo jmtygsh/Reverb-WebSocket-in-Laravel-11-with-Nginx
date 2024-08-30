@@ -43,15 +43,8 @@ REVERB_SCHEME="https"
 REVERB_SERVER_PORT=9000  # proxy_pass port -- You can use any port number (MOST 8080)  -- Just Allow port in Firewall
 ````
 
-## Step 5: Update echo.js
 
-Ensure that echo.js is correctly configured. The file is located at:
-
-```path
-resources/js/echo.js
-```
-
-## Step 6: Bootstrap Configuration
+## Step 5: Bootstrap Configuration
 
 Ensure that Echo is imported in your bootstrap.js file, located at:
 ```path
@@ -94,9 +87,9 @@ Alpine.start();
 
 ```
 
-## Step 7: Reverb Configuration
+## Step 6: Reverb Configuration
 
-Finally, configure Reverb by setting up the reverb.php file in your config directory:
+Finally, you don't need to configure reverb.php; keep it as it is.
 ```path
 config/reverb.php
 ```
