@@ -104,6 +104,21 @@ Also, you don't need to configure broadcasting.php keep it as it is.
 config/broadcasting.php
 ```
 
+## Step 9: Clear Configuration cache
+```path
+php artisan config:clear
+
+php artisan config:cache
+
+php artisan optimize:clear
+
+systemctl restart nginx
+
+npm run build
+
+systemctl restart nginx
+```
+
 
 
 
