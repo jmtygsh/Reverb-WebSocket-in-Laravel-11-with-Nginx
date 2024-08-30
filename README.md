@@ -31,8 +31,11 @@ Or
 sudo systemctl restart nginx
 ```
 
+## Step 4: Set up your sub-domain
+Go to your domain registrar, find the DNS configuration, and create a CNAME record with 'ws' as the name and '@' as the value.
 
-## Step 4: Update Environment Variables
+
+## Step 5: Update Environment Variables
 
 Make sure to include the following environment variables in your .env file:
 
@@ -44,7 +47,7 @@ REVERB_SERVER_PORT=9000  # proxy_pass port -- You can use any port number (MOST 
 ````
 
 
-## Step 5: Bootstrap Configuration
+## Step 6: Bootstrap Configuration
 
 Ensure that Echo is imported in your bootstrap.js file, located at:
 ```path
@@ -87,11 +90,18 @@ Alpine.start();
 
 ```
 
-## Step 6: Reverb Configuration
+## Step 7: Reverb Configuration
 
-Finally, you don't need to configure reverb.php; keep it as it is.
+Finally, you don't need to configure reverb.php keep it as it is.
 ```path
 config/reverb.php
+```
+
+## Step 8: Broadcasting Configuration
+
+Also, you don't need to configure broadcasting.php keep it as it is.
+```path
+config/broadcasting.php
 ```
 
 
