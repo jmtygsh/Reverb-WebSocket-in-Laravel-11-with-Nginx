@@ -37,9 +37,10 @@ sudo systemctl restart nginx
 Make sure to include the following environment variables in your .env file:
 
 ```env
-REVERB_HOST="example.com"
-REVERB_PORT=443
-REVERB_SCHEME=https
+REVERB_HOST=ws.example.com  # This is sub-domain ssl verify
+REVERB_PORT=443   # nginx ssl server listen port
+REVERB_SCHEME="https"  
+REVERB_SERVER_PORT=9000  # proxy_pass port -- You can use any port number (MOST 8080)  -- Just Allow port in Firewall
 ````
 
 ## Step 5: Update echo.js
