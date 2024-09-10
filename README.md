@@ -120,6 +120,15 @@ systemctl restart nginx
 ```
 
 
+## These step only for cloudpanel 
+Sometimes while SSL install to sub-domain occur problem so, 
+
+# Main server block for handling HTTPS requests
+ server_name example.com ws.example.com; // try to add sub-domain to solve ssl problem on here
+
+# Backend server handling PHP requests
+  server_name example.com ws.example.com; //here too
+
 
 
 
