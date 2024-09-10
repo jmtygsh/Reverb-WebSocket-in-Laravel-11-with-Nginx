@@ -129,7 +129,7 @@ Sometimes while SSL install to sub-domain occur problem so,
 # Backend server handling PHP requests
   server_name example.com ws.example.com; //here too
 
-
+ONCE SSL INSTALL COMPLETE THEN REMOVE IT.
 
 
 
